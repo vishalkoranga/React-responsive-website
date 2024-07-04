@@ -1,0 +1,76 @@
+.programms{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+.programms-header{
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+}
+.program-categories{
+    display: flex;
+    gap: 1rem;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: grey;
+    padding: 2rem;
+    justify-content: space-between;
+    color: white;
+}
+.category>:nth-child(1){
+    width: 2rem;
+    height: 2rem;
+    fill:rgb(5, 5, 5);
+}
+.category>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+.category>:nth-child(3){
+   font-size: 0.9rem;
+   line-height: 25px;
+}
+.join-now{
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.join-now>img{
+    width: 1rem;
+}
+.category:hover{
+    cursor: pointer;
+    background: var(--planCard);
+}
+
+
+@media  screen and (max-width: 768px){
+    .programms{
+        flex-direction: column;
+    }  
+    .programms-header>span{
+        font-size: large;
+    }
+    .programms-header{
+     flex-direction: column;
+     align-items: center;
+     gap: 1rem;
+     margin-top: 1rem;
+    }
+    .program-categories{
+        flex-direction: column;
+    }
+
+}
